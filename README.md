@@ -82,13 +82,7 @@ python3 app.py
 
 ### 5. Open the app in your browser
 
-```shell
-npm run dev
-```
-
-### 6. Open the app in your browser
-
-Visit [http://127.0.0.1:5000/](http://127.0.0.1:5000/) in your browser.
+- Visit [http://127.0.0.1:5000/](http://127.0.0.1:5000/) in your browser.
 
 ## Contributing
 
