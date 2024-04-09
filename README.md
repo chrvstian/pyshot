@@ -1,4 +1,3 @@
-
 <div align="center">
   <h1 align="center">PyShot</h1>
   <img alt="PyShot Logo" src="https://github.com/chrvstian/pyshot/blob/main/.github/logo.png" width="15%" height="15%">
@@ -30,48 +29,58 @@ PyShot is an open-source code-to-image generator written in Python 3. You can us
 ## Tech Stack
 
 - [Pygments](https://pygments.org/) - Syntax Highlighting Library
+- HTML & CSS - User Interface
 - [Python](https://www.python.org/) – Language
 - [Flask](https://flask.palletsprojects.com/en/3.0.x/) - Server
-- HTML & CSS - User Interface
 
 ## Getting Started
 
 ### Prerequisites
 
-Here's what you need to be able to run Papermark:
+Here's what you need to be able to PyShot:
 
-- Node.js (version >= 18)
-- PostgreSQL Database
-- Blob storage (currently [AWS S3](https://aws.amazon.com/s3/) or [Vercel Blob](https://vercel.com/storage/blob))
-- [Resend](https://resend.com) (for sending emails)
+- Python 3+
+- Flask, Playwright & Pygments modules
 
 ### 1. Clone the repository
 
 ```shell
-git clone https://github.com/mfts/papermark.git
-cd papermark
+git clone https://github.com/chrvstian/pyshot.git
+cd pyshot
 ```
 
-### 2. Install npm dependencies
+### 2. Install all required modules
 
 ```shell
-npm install
+pip3 install -r requirements.txt
 ```
 
-### 3. Copy the environment variables to `.env` and change the values
+### 3. Generate your secret key for session management
+
+Step 1:
+```shell
+python3
+```
+
+Step 2:
+```shell
+import secrets; secrets.token_hex()
+```
+
+Step 3:
+- Copy the token that it creates and locate the 27th line in app.py
+- Paste the key into the line that says:
+```shell
+app.secret_key = "AddYourSecretKeyHere" # Secret key used for session management
+```
+
+### 4. Run the program
 
 ```shell
-cp .env.example .env
+python3 app.py
 ```
 
-### 4. Initialize the database
-
-```shell
-npx prisma generate
-npx prisma migrate deploy
-```
-
-### 5. Run the dev server
+### 5. Open the app in your browser
 
 ```shell
 npm run dev
@@ -79,48 +88,10 @@ npm run dev
 
 ### 6. Open the app in your browser
 
-Visit [http://localhost:3000](http://localhost:3000) in your browser.
-
-## Tinybird instructions
-
-To prepare the Tinybird database, follow these steps:
-
-0. We use `pipenv` to manage my Python dependencies. If you don't have it installed, you can install it using the following command:
-   ```sh
-   pkgx pipenv
-   ```
-1. Download the Tinybird CLI from [here](https://www.tinybird.co/docs/cli.html) and install it on your system.
-2. After authenticating with the Tinybird CLI, navigate to the `lib/tinybird` directory:
-   ```sh
-   cd lib/tinybird
-   ```
-3. Push the necessary datasources using the following command:
-   ```sh
-   tb push datasources/*
-   tb push endpoints/get_*
-   ```
-4. Don't forget to set the `TINYBIRD_TOKEN` with the appropriate rights in your `.env` file.
-
-#### Updating Tinybird
-
-```sh
-pipenv shell
-## start: pkgx-specific
-cd ..
-cd papermark
-## end: pkgx-specific
-pipenv update tinybird-cli
-```
+Visit [http://127.0.0.1:5000/](http://127.0.0.1:5000/) in your browser.
 
 ## Contributing
 
-Papermark is an open-source project and we welcome contributions from the community.
+PyShot is an open-source project and we welcome contributions from the community.
 
 If you'd like to contribute, please fork the repository and make changes as you'd like. Pull requests are warmly welcome.
-
-### Our Contributors ✨
-
-<a href="https://github.com/mfts/papermark/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=mfts/papermark" />
-</a>
-
