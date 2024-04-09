@@ -1,6 +1,7 @@
 
 <div align="center">
   <h1 align="center">PyShot</h1>
+  <img alt="PyShot Logo" src="">
   <h3>A code-to-image generator written in Python 3.</h3>
 
 </div>
