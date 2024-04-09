@@ -9,7 +9,7 @@
 
 <div align="center">
   <a href="https://github.com/chrvstian/pyshot/stargazers"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/chrvstian/pyshot"></a>
-  <a href="https://github.com/chrvstian/pyshot/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/badge/license-AGPLv3-purple"></a>
+  <a href="https://github.com/chrvstian/pyshot/.github/LICENSE"><img alt="License" src="https://img.shields.io/badge/license-AGPLv3-purple"></a>
 </div>
 
 <br/>
@@ -24,7 +24,7 @@ PyShot is an open-source code-to-image generator written in Python 3. You can us
 
 ## Demo
 
-![Papermark Welcome GIF](.github/images/papermark-welcome.gif)
+![Showcase Video](https://github.com/chrvstian/pyshot/blob/main/demo/demo.mov)
 
 ## Tech Stack
 
