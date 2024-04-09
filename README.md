@@ -24,7 +24,7 @@ PyShot is an open-source code-to-image generator written in Python 3. You can us
 
 ## Demo
 
-[<img src="hhttps://github.com/chrvstian/pyshot/blob/main/demo/demo.mov" width="50%">]
+![Showcase](https://github.com/chrvstian/pyshot/assets/141359845/4e25bc7f-651a-4503-99ea-b1cfdca6b902)
 
 ## Tech Stack
 
