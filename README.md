@@ -1,7 +1,7 @@
 
 <div align="center">
-  <img alt="PyShot Logo" src="https://github.com/chrvstian/pyshot/blob/main/.github/logo.png" width="15%" height="15%">
   <h1 align="center">PyShot</h1>
+  <img alt="PyShot Logo" src="https://github.com/chrvstian/pyshot/blob/main/.github/logo.png" width="15%" height="15%">
   <h3>A code-to-image generator written in Python 3.</h3>
 
 </div>
