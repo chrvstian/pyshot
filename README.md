@@ -9,7 +9,7 @@
 
 <div align="center">
   <a href="https://github.com/chrvstian/pyshot/stargazers"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/chrvstian/pyshot"></a>
-  <a href="https://github.com/chrvstian/pyshot/.github/LICENSE"><img alt="License" src="https://img.shields.io/badge/license-AGPLv3-purple"></a>
+  <a href="https://github.com/chrvstian/pyshot/blob/main/.github/LICENSE"><img alt="License" src="https://img.shields.io/badge/license-AGPLv3-purple"></a>
 </div>
 
 <br/>
