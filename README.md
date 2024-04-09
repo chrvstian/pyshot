@@ -57,17 +57,17 @@ pip3 install -r requirements.txt
 
 ### 3. Generate your secret key for session management
 
-Step 1:
+**Step 1:** Open your terminal & input the following code
 ```shell
 python3
 ```
 
-Step 2:
+**Step 2:** Generate your secret key
 ```shell
 import secrets; secrets.token_hex()
 ```
 
-Step 3:
+**Step 3:** Copy your token & paste it into app.py
 - Copy the token that it creates and locate the 27th line in app.py
 - Paste the key into the line that says:
 ```shell
