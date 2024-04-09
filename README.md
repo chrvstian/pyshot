@@ -37,7 +37,7 @@ PyShot is an open-source code-to-image generator written in Python 3. You can us
 
 ### Prerequisites
 
-Here's what you need to be able to PyShot:
+Here's what you need to be able to use PyShot:
 
 - Python 3+
 - Flask, Playwright & Pygments modules
